@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1>Etch-A-Sketch</h1>
+      <div class="grid"></div>
+      <div class="buttons">
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('rainbow')">Rainbow</button>
+
+        <button onclick="changeColor('white')">Eraser</button>
+        <button onclick="resetGrid()">Reset</button>
+      </div>
+      <div class="input-container">
+        <p class="input-text">Choose the size of the grid:</p>
+        <input
+          id="inputField"
+          type="number"
+          placeholder="Must be between 0 and 100"
+        />
+        <button id="validateInput">Set Size!</button>
+      </div>
+    </div>
+  </body>
+</html>
